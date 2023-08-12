@@ -1,0 +1,73 @@
+# server:
+#   port: 8081
+application:
+  security:
+    jwt:
+      tokenSecret: 32DBfwpPhVmtCh5AyKFoYRwKs889/yBPNXl0TzyBPDZQQVEW/6pniNM1ZoaIBsCpT5TML8jT1Qp6boKhSeJTSg==
+      expiration: 86400000 # a day
+      refreshToken:
+        expiration: 604800000 # 7 days
+    cors:
+      allowedOrigins: http://localhost:3000,http://localhost:8080,https://test-payment.momo.vn
+    oauth2:
+      # After successfully authenticating with the OAuth2 Provider,
+      # we'll be generating an auth token for the user and sending the token to the
+      # redirectUri mentioned by the client in the /oauth2/authorize request.
+      # We're not using cookies because they won't work well in mobile clients.
+      authorizedRedirectUris:
+        - http://localhost:3000/oauth2/redirect
+        - myandroidapp://oauth2/redirect
+        - myiosapp://oauth2/redirect
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ricpham.dev@gmail.com
+    password: gjkulsvjpoymwdnb
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          # required: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 38437578594-s94fbohmmc2s52e476qvnfkmhi7u9m7o.apps.googleusercontent.com
+            clientSecret: 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
+            redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
+            scope:
+              - email
+              - profile
+          facebook:
+            clientId: 1282012579388090
+            clientSecret: 5294e9d8e54a6ecc83e35b313e06f585
+            redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
+            scope:
+              - email
+              - public_profile
+          github:
+            clientId: 401ca74cd1fa8fcf7ba8
+            clientSecret: 879d52000e0b9ba61959fba2b3ed46e72b75ca56
+            redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
+            scope:
+              - user:email
+              - read:user
+        provider:
+          facebook:
+            authorizationUri: https://www.facebook.com/v3.0/dialog/oauth
+            tokenUri: https://graph.facebook.com/v3.0/oauth/access_token
+            userInfoUri: https://graph.facebook.com/v3.0/me?fields=id,first_name,middle_name,last_name,name,email,verified,picture.width(250).height(250)
+paypal:
+  mode: sandbox
+  client:
+    id: AXrpqeGYmDXlAStxvECloluO-x5l3mbrtRI-8IgHvyuThZFUkef8nGiJB0swOrC6UwXLlToifus9BqeE
+    secret: EA9byDizrPlqqfSSQrA0gvbRdqC3m1cAE_0-rwJYw4kwe4aJtWwGDOFn3YZs9dL-TdBD8eYSuM5gMkhn
+  account:
+    personal:
+      email: sb-c9mcj26117776@personal.example.com
+      password: e@LbdH4n

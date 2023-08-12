@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
+    <fontFamily name="NewFontFamily">
+        <normal><![CDATA[fonts/NewFontFamily/VNI-Script-Italic.TTF]]></normal>
+        <pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+        <exportFonts />
+    </fontFamily>
+    <fontFamily name="TimesNewRomanFontFamily">
+        <normal><![CDATA[fonts/TimesNewRomanFontFamily/times.ttf]]></normal>
+        <bold><![CDATA[fonts/TimesNewRomanFontFamily/timesbd.ttf]]></bold>
+        <italic><![CDATA[fonts/TimesNewRomanFontFamily/timesi.ttf]]></italic>
+        <boldItalic><![CDATA[fonts/TimesNewRomanFontFamily/timesbi.ttf]]></boldItalic>
+        <exportFonts />
+    </fontFamily>
+    <fontFamily name="Arial">
+        <normal><![CDATA[fonts/Arial/arial.ttf]]></normal>
+        <bold><![CDATA[fonts/Arial/arialbd.ttf]]></bold>
+        <italic><![CDATA[fonts/Arial/ariali.ttf]]></italic>
+        <boldItalic><![CDATA[fonts/Arial/arialbi.ttf]]></boldItalic>
+        <pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+        <exportFonts />
+    </fontFamily>
+    <fontFamily name="Arial Narrow">
+        <normal><![CDATA[fonts/ArialNarrow/ARIALN.TTF]]></normal>
+        <bold><![CDATA[fonts/ArialNarrow/ARIALNB.TTF]]></bold>
+        <italic><![CDATA[fonts/ArialNarrow/ARIALNI.TTF]]></italic>
+        <boldItalic><![CDATA[fonts/ArialNarrow/ARIALNBI.TTF]]></boldItalic>
+        <pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+        <exportFonts />
+    </fontFamily>
+    <fontFamily name="Arial Black">
+        <normal><![CDATA[fonts/ArialBlack/ariblk.ttf]]></normal>
+        <pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+        <exportFonts />
+    </fontFamily>
+
+</fontFamilies>
+	
